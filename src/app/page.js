@@ -1,5 +1,5 @@
-import RultivaLanding from "@/components/RultivaLanding";
+import GeffroysFarm from "@/components/GeffroysLanding";
 
 export default function Page() {
-  return <RultivaLanding />;
+  return <GeffroysFarm />;
 }

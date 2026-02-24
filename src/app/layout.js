@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Rultiva — Bring Fresh Growth To Agriculture",
+  title: "Geffroy's Farm — A Gateway to Sustainable Food Security",
   description:
-    "Experience the ultimate guiding journey with expert tips, premium gear, and professional insights.",
+    "Providing produce farmed with eco-friendly and innovative methods for food that is good for the Seychellois and the environment.",
 };
 
 export default function RootLayout({ children }) {
