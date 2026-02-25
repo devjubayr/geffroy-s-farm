@@ -6,6 +6,7 @@ export default function Methods() {
   const { mob, tab } = useBP();
   return (
     <section
+      id="methods"
       ref={ref}
       style={{
         background: T.bg0,

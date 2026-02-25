@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { HR, T, useBP } from ".";
 
 export default function Footer() {
@@ -93,26 +94,33 @@ export default function Footer() {
               tropical fruits at Les Cannelles, Anse Royale, Mahé.
             </p>
             <div style={{ display: "flex", gap: 8 }}>
-              {["FB", "IG", "LI"].map((s) => (
-                <motion.div
-                  key={s}
-                  whileHover={{ borderColor: T.mid, color: T.green }}
-                  style={{
-                    height: 30,
-                    border: `1px solid ${T.border}`,
-                    borderRadius: 7,
-                    padding: "0 11px",
-                    display: "flex",
-                    alignItems: "center",
-                    fontSize: 11,
-                    fontWeight: 600,
-                    color: T.muted,
-                    cursor: "pointer",
-                    transition: "all 0.18s",
-                  }}
-                >
-                  {s}
-                </motion.div>
+              {[
+                { icon: "FB", link: "https://web.facebook.com/geffroysfarm" },
+                {
+                  icon: "IN",
+                  link: "https://www.linkedin.com/in/jean-paul-geffroy-90bb5683",
+                },
+              ].map((s) => (
+                <Link key={s.icon} href={s.link} target="_blank">
+                  <motion.div
+                    whileHover={{ borderColor: T.mid, color: T.green }}
+                    style={{
+                      height: 30,
+                      border: `1px solid ${T.border}`,
+                      borderRadius: 7,
+                      padding: "0 11px",
+                      display: "flex",
+                      alignItems: "center",
+                      fontSize: 11,
+                      fontWeight: 600,
+                      color: T.muted,
+                      cursor: "pointer",
+                      transition: "all 0.18s",
+                    }}
+                  >
+                    {s.icon}
+                  </motion.div>
+                </Link>
               ))}
             </div>
           </div>

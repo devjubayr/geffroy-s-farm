@@ -81,6 +81,7 @@ export default function CTA() {
                   onFocus={(e) => (e.target.style.borderColor = T.mid)}
                   onBlur={(e) => (e.target.style.borderColor = T.border)}
                 />
+
                 <BtnPrimary
                   onClick={() => email && setSent(true)}
                   style={{
@@ -89,7 +90,7 @@ export default function CTA() {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  Subscribe →
+                  See More on FB →
                 </BtnPrimary>
               </motion.div>
             ) : (

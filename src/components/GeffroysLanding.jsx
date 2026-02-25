@@ -9,7 +9,6 @@ import Methods from "./Methods";
 import Navbar from "./Navbar";
 import PartnerBanner from "./PartnerBanner";
 import Produce from "./Produces";
-import Testimonials from "./Testimonials";
 import TrustBar from "./Trusbar";
 
 export default function GeffroysFarm() {
@@ -39,7 +38,7 @@ export default function GeffroysFarm() {
       <About />
       <Produce />
       <Methods />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <PartnerBanner />
       <CTA />
       <Footer />

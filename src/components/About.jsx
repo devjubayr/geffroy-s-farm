@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   BtnGhost,
   BtnPrimary,
@@ -120,9 +121,9 @@ export default function About() {
             }}
           >
             Jean-Paul Geffroy grew up on his father's farm at Anse Royale where
-            vegetables, chickens, pigs and cows were raised together. As a
-            third-generation farmer he inherited not just the land — but a deep
-            work ethic and love for fresh produce.
+            vegetables, fruits were produce together. As a third-generation
+            farmer he inherited not just the land — but a deep work ethic and
+            love for fresh produce.
           </motion.p>
           <motion.p
             variants={up()}
@@ -135,9 +136,7 @@ export default function About() {
           >
             His 3.6-hectare commercial operation at Les Cannelles now grows{" "}
             <strong>20+ fresh vegetables</strong> alongside a range of{" "}
-            <strong style={{ color: T.fruit }}>seasonal tropical fruits</strong>{" "}
-            — managed with precision seeding, steam sterilisation, and 100%
-            natural neem oil.
+            <strong style={{ color: T.fruit }}>seasonal tropical fruits</strong>
           </motion.p>
           <motion.div
             variants={up()}
@@ -150,8 +149,8 @@ export default function About() {
           >
             {[
               { n: "3.6ha", l: "Farm Area" },
-              { n: "3rd", l: "Generation" },
               { n: "20+", l: "Vegetables" },
+              { n: "10+", l: "Fruits" },
               { n: "100%", l: "Eco Methods" },
             ].map(({ n, l }) => (
               <div
@@ -184,8 +183,17 @@ export default function About() {
             variants={up()}
             style={{ display: "flex", gap: 10, flexWrap: "wrap" }}
           >
-            <BtnPrimary style={{ borderRadius: 9 }}>Meet Jean-Paul</BtnPrimary>
-            <BtnGhost style={{ borderRadius: 9 }}>Our eco methods →</BtnGhost>
+            <Link
+              href="https://www.linkedin.com/in/jean-paul-geffroy-90bb5683"
+              target="_blank"
+            >
+              <BtnPrimary style={{ borderRadius: 9 }}>
+                Meet Jean-Paul
+              </BtnPrimary>
+            </Link>
+            <a href="#methods">
+              <BtnGhost style={{ borderRadius: 9 }}>Our eco methods →</BtnGhost>
+            </a>
           </motion.div>
         </motion.div>
       </div>

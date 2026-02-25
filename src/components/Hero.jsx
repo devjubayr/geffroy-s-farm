@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import { BtnGhost, BtnPrimary, EASE, IMG, T, Tag, useBP } from ".";
 
 export default function Hero() {
@@ -164,12 +165,16 @@ export default function Hero() {
               flexWrap: "wrap",
             }}
           >
-            <BtnPrimary style={{ borderRadius: 9, padding: "12px 26px" }}>
-              Order Fresh Produce
-            </BtnPrimary>
-            <BtnGhost style={{ borderRadius: 9, padding: "12px 22px" }}>
-              Our Methods →
-            </BtnGhost>
+            <Link href={"http://wa.me/2482726083"} target="_blank">
+              <BtnPrimary style={{ borderRadius: 9, padding: "12px 26px" }}>
+                Order Fresh Produce
+              </BtnPrimary>
+            </Link>
+            <Link href="#methods">
+              <BtnGhost style={{ borderRadius: 9, padding: "12px 22px" }}>
+                Our Methods →
+              </BtnGhost>
+            </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
