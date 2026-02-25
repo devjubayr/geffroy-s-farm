@@ -79,7 +79,10 @@ function Navbar() {
               </BtnGhost>
             </Link>
 
-            <Link href={"http://wa.me/2482726083"} target="_blank">
+            <Link
+              href={"https://web.facebook.com/geffroysfarm"}
+              target="_blank"
+            >
               <BtnPrimary style={{ padding: "8px 18px", fontSize: 13 }}>
                 Order Produce
               </BtnPrimary>
@@ -161,8 +164,15 @@ function Navbar() {
               </motion.div>
             ))}
             <div style={{ display: "flex", gap: 10, marginTop: 20 }}>
-              <BtnGhost style={{ flex: 1 }}>Call Us</BtnGhost>
-              <BtnPrimary style={{ flex: 1 }}>Order Now</BtnPrimary>
+              <Link href={"http://wa.me/2482726083"} target="_blank">
+                <BtnGhost style={{ flex: 1 }}>Call Us</BtnGhost>
+              </Link>
+              <Link
+                href={"https://web.facebook.com/geffroysfarm"}
+                target="_blank"
+              >
+                <BtnPrimary style={{ flex: 1 }}>Order Now</BtnPrimary>
+              </Link>
             </div>
           </motion.div>
         )}
